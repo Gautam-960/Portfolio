@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #222;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+    padding: 0 120px;
+    flex-wrap: wrap;
+}
+
+.firstSection>div {
+    width: 45%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.purple {
+    color: #a855f7;
+}
+
+#element {
+    color: #a855f7;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #9333ea, #6366f1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #9333ea;
+}
+
+.myImage {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #9333ea;
+    box-shadow: 0 0 30px #9333ea;
+}
+
+.section {
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #111;
+    border: 1px solid #222;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.skill i {
+    color: #a855f7;
+}
+
+.skill:hover {
+    background: #1a1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #9333ea;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #111;
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #9333ea;
+}
+
+.project i {
+    font-size: 25px;
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #222;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .firstSection>div {
+        width: 100%;
+    }
+
+    .myImage {
+        margin-top: 20px;
+    }
+}
+
+#certificates {
+  padding: 60px 10%;
+  color: white;
+}
+
+#certificates h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #7b2cff;
+  transition: 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #7b2cff;
+}
+
+.certificate-card h3 {
+  color: #a855f7;
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.certificate-card a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #7b2cff, #a855f7);
+  padding: 8px 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* CERTIFICATE LOGO */
+.cert-logo {
+  width: 60px;
+  margin-bottom: 10px;
+  filter: brightness(1.2);
+}
+
+/* Align logo nicely */
+.certificate-card {
+  text-align: center;
+}
+
+.cert-logo {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.certificate-card {
+  text-align: center;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 cards per row */
+  gap: 25px;
+}
+
+@media (max-width: 900px) {
+  .certificate-container {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .certificate-container {
+    grid-template-columns: 1fr; /* mobile */
+  }
+}
+
